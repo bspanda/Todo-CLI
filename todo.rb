@@ -31,10 +31,6 @@ class Todo < ActiveRecord::Base
     where(due_date: Date.today...)
   end
 
-  #def self.to_displayable_string
-  # all.map { |todo| todo.to_displayable_list }
-  #end
-
   def self.show_list
     puts "My Todo-list\n\n"
     puts "Overdue\n"
